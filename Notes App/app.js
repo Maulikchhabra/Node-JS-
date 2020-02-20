@@ -30,3 +30,20 @@ const notes =require('./notes.js')
      }
  })
  //console.log(yargs.argv);
+
+//create remove command
+  yargs.command({
+    command:'remove',
+    describe:'Remove the note',
+    builder:{
+      title:{
+        descbribe:'Note title',
+        demandOption:true,
+        type:'string'
+      }  
+    },
+    handler(argv){
+      notes.removeNote(argv.title)
+    }
+  })
+  //console.log(yargs.argv);
