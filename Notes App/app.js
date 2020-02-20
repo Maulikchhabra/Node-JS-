@@ -9,4 +9,24 @@ yargs.version('1.1.0') //setting version to 1.1.0 from 1.0.0
 
 const notes =require('./notes.js')
 
- 
+ //create add command
+ yargs.command({
+   command:'add',
+   descbribe:'Add new note',
+   builder:{
+     title:{
+       describe:'Note title',
+       demandOption: true,
+       type:'string'
+     },
+     body:{
+       describe:'Body of note',
+       demandOption:true,
+       type:'string'
+     }
+   },
+   handler(argv){
+      notes.addNote(argv.title,argv.body)
+     }
+ })
+ //console.log(yargs.argv);
