@@ -47,3 +47,12 @@ const notes =require('./notes.js')
     }
   })
   //console.log(yargs.argv);
+
+//create list command
+ yargs.command({
+   command:'list',
+   describe:'List the notes',
+   handler(){notes.listNotes()
+   }
+ })   
+ //console.log(yargs.argv);
