@@ -1,4 +1,4 @@
-/*console.log("Starting");
+console.log("Starting");
 
 setTimeout(()=>{ 
     console.log("3");    //Output 1
