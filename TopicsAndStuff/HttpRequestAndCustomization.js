@@ -43,5 +43,13 @@ request({url:url, json:true },(error,response)=>{
   console.log(response.body.currently);  
 
 
-*/
 
+
+Changing units involve using units in the URL like =
+
+const url ='https://api.darksky.net/forecast/1cfa8494916eb140e6d9266d0a6082d6/37.8267,-122.4233?units=si'
+will provide data in SI units 
+
+const url ='https://api.darksky.net/forecast/1cfa8494916eb140e6d9266d0a6082d6/37.8267,-122.4233?units=us'
+will provide data in imperial units 
+*/
