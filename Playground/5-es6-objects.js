@@ -25,3 +25,14 @@ const product={
     stock: 201,
     salePrice: undefined
 }
+
+//Normal ways
+/*
+const label = product.label
+const stock = product.stock
+*/
+
+//ES6 way
+const {label, stock} = product
+console.log(label);
+console.log(stock);
