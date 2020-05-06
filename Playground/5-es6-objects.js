@@ -56,3 +56,12 @@ OUTPUT = red notebook
          201
          5
 */
+
+
+//Object destructure inside a function
+//Instead of passing the object as another variable directly destructure the object in the arguments
+const transaction =(type, {label, stock=0})=>{
+    console.log(type , label, stock);
+    
+}
+transaction("Order" , product)
