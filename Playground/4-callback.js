@@ -46,3 +46,18 @@ add(1,4,(sum)=>{
     console.log(sum);    
 })
 //Challenge completed
+
+const doWorkCallback = (callback) =>{
+    setTimeout(()=>{
+       //callback("This is error!", undefined)   when things went wrong
+       callback(undefined,[1,4,7])  //when things went well
+    },2000)
+}
+
+doWorkCallback((error,result) =>{
+    if(error){
+        return console.log(error);
+    }
+
+    console.log(result);
+})
