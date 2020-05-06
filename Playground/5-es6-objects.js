@@ -16,3 +16,12 @@ const user1={
     location:"Dehradun"
 }
 console.log(user1);
+
+//2 Object destructing
+
+const product={
+    label: 'red notebook',
+    price: 3,
+    stock: 201,
+    salePrice: undefined
+}
