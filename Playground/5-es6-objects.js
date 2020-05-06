@@ -36,3 +36,23 @@ const stock = product.stock
 const {label, stock} = product
 console.log(label);
 console.log(stock);
+
+/Renaming the property of the object
+  //Changing label to productLabel
+/*
+const {label:productLabel, stock} = product
+console.log(label);
+console.log(stock);
+*/
+
+//Making a new property in object (should not be in object previously)
+  //Adding rating property
+/* 
+  const {label, stock, rating = 5} = product
+  console.log(label);
+  console.log(stock);
+
+OUTPUT = red notebook
+         201
+         5
+*/
